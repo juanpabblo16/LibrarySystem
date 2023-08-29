@@ -6,10 +6,10 @@ public class Book {
     private String publisher;
     private String author;
 
-    public Book() {
-    }
+    // Constructors, getters, setters
 
     public Book(String name, String publisher, String author) {
+        this.id = id;
         this.name = name;
         this.publisher = publisher;
         this.author = author;
