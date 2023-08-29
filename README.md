@@ -45,8 +45,8 @@ If you encounter a "Failed to configure a DataSource" error while running the ap
 1. Open the `application.properties` file.
 2. Add the following line to disable DataSource auto-configuration:
 
-   ```properties ```
-    ```spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration ```
+   ###properties
+   ```spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration ```
 
 3. Save the file and restart the application. This change prevents the application from trying to configure a database connection when it's not needed.
 
