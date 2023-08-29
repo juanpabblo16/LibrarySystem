@@ -38,6 +38,19 @@ This project is a simple Spring Boot application that implements a Bookstore Man
    - Retrieve a book: GET request to `/books/{id}`
    - Delete a book: DELETE request to `/books/{id}`
 
+## Important Note: Disabling DataSource Auto-Configuration
+
+If you encounter a "Failed to configure a DataSource" error while running the application, follow these steps to resolve it:
+
+1. Open the `application.properties` file.
+2. Add the following line to disable DataSource auto-configuration:
+
+   ```properties ```
+    ```spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration ```
+
+3. Save the file and restart the application. This change prevents the application from trying to configure a database connection when it's not needed.
+
+
 ## Contributions
 
 Contributions to this project are welcome! If you would like to contribute, please fork the repository and create a pull request with your changes.
